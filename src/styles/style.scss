@@ -23,7 +23,7 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    height: 50px;
+    height: 45px;
     position: fixed;
     width: 100vw;
     z-index: 9999;
@@ -37,12 +37,14 @@ nav{
 
         li{
             list-style: none;
-            margin: 0px 15px;
+            margin: 0px 21.5px;
             font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
             font-size: 12px;
-            color: #f5f5f7b0;
+            color: #d6d6d7;
             cursor: pointer;
             transition: ease-in .25s;
+            font-weight: 100;
+            letter-spacing: -.05px;
 
             img{
                 padding-top: 5px;
@@ -77,7 +79,7 @@ nav{
     display: none;
 }
 
-@media screen and (max-width:872px){
+@media screen and (max-width:1035px){
     nav{
         display: none;
     }
