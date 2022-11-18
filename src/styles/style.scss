@@ -197,18 +197,17 @@ nav{
             -webkit-transform: rotate(-45deg);
         }
     }
-
 }
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
 
-/** ipad.js component styling*/
+/** ipad.jsx component styling*/
 
 .ipad-section{
     
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 
     img{
         height: 500px;
@@ -221,6 +220,91 @@ nav{
         position: absolute;
         top: 39%;
         left: 64%;
+        transform: translate(-50%, -50%);
+
+        h1{
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 600;
+            letter-spacing: -.005em;
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+
+        p{
+            font-size: 28px;
+            line-height: 1.10722;
+            font-weight: 400;
+            letter-spacing: .004em;
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            margin-top: 6px;
+            color: #1d1d1f;
+        }
+
+        .links{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            width: 94%;
+
+            a{
+                color: #06c;
+                letter-spacing: inherit;
+                font-size: 23px;
+                line-height: 1.381;
+                font-weight: 100;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                padding-top: 5px;
+                text-decoration: none;
+
+                .arrow{
+                    border: solid #06c;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    margin-bottom: 1px;
+                }
+        
+                .right{
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+
+            }
+
+            a:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+/** iphone14.jsx component styling*/
+
+.iphone14-section{
+    
+    padding-bottom: 80px;
+
+    img{
+        height: 500px;
+        width: 80%;
+        scale: 125.3%;
+        scale: 130.3%;
+        scale:131%;
+        padding-top: 56px;
+    }
+
+    .iphone-text-container{
+        position: absolute;
+        top: 84%;
+        top: 900px;
+        left: 50%;
         transform: translate(-50%, -50%);
 
         h1{

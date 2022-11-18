@@ -4,6 +4,7 @@ import Ipad from './components/ipad';
 import MobileHeader from './components/mobileheader';
 import HolidayGift from './components/holidaygift';
 import Discount from './components/discount';
+import Iphone14 from './components/iphone14';
 
 function App() {
   return (
@@ -15,11 +16,8 @@ function App() {
         <HolidayGift/>
       </div>
       <Discount/>
-
       <Ipad/>
-      <Ipad/>
-      <Ipad/>
-      <Ipad/>
+      <Iphone14/>
     </div>
   );
 }
