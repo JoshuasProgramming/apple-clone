@@ -10,8 +10,8 @@ class Ipad extends Component {
                     <h1>iPad</h1>
                     <p>Loveable. Drawable. Magical.</p>
                     <div className="links">
-                        <a href="#">Learn more</a>
-                        <a href="#">buy</a>
+                        <a href="#">Learn more <i className='arrow right'></i></a>
+                        <a href="#">Buy <i className='arrow right'></i></a>
                     </div>
                 </div>
             </section>

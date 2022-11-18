@@ -3,8 +3,25 @@ import '../styles/style.css';
 
 class Header extends Component {
     render(){
+        
+        // const navigation = document.getElementById('navigation');
+
+        // // navigation.addEventListener('click', (e)=>{
+        // //     alert("worked");
+        // // })
+
+        // // window.onscroll = (e) => {
+        // //     if(document.documentElement.scroll > 25){
+        // //         navigation.style.background = '#000000e1';
+        // //         navigation.style.background = 'red';
+        // //     } else {
+        // //         navigation.style.background = '#000000c2';
+        // //         navigation.style.background = 'red';
+        // //     }
+        // // }
+
         return(
-            <nav>
+            <nav id='navigation'>  
                 <ul>
                     <li><img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"></img></li>
                     <li>Store</li>

@@ -8,9 +8,7 @@
 /** Preventing images & elements going across the screen */
 html{
     overflow-x: hidden;
-    overflow-y: hidden;
 }
-
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -18,13 +16,15 @@ html{
 /** header.jsx & mobileheader.jsx component styling */
 
 nav{
-    background: rgb(0, 0, 0);
+    background: #000000e0;
+    backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
     height: 45px;
     position: fixed;
+    top: 0;
     width: 100vw;
     z-index: 9999;
     max-height: 100%;
@@ -86,13 +86,13 @@ nav{
     
 
     .mobile-nav{
-        background: rgb(0, 0, 0);
+        background: #000000c7;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: row;
         height: 50px;
-        position: fixed;
+        position: initial;
         width: 100vw;
         z-index: 9999;
         max-height: 100%;
@@ -139,10 +139,10 @@ nav{
 //////////////////////////////////////////////////////////////////////////////////
 
 
-/** holidaygift.jsx component styling */
+/** holidaygift.jsx & discount component styling */
 
 .holiday-gift-section{
-    background: rgba(255, 21, 21, 0.8);
+    background: rgba(255,21,21,.8);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -151,12 +151,53 @@ nav{
     width: 100vw;
     z-index: 9999;
     max-height: 100%;
-    padding-top: 45px;
+    padding-top: 5px;
 
     p{
+        margin-bottom: 5px;
+        font-weight: 100;
+        font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         font-size: 13px;
         color: #f5f5f7;
+        letter-spacing: .3px;
+
+        .arrow{
+            border: solid #f5f5f7;;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 2.5px;
+        }
+
+        .right{
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
     }
+
+}
+
+.discount{
+    background: #000000e0;
+
+    a{
+        color: #06c;
+        cursor: pointer;
+        text-decoration: underline;
+
+        .arrow{
+            border: solid #06c;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 2px;
+            margin-bottom: 1px;
+        }
+
+        .right{
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
 }
 
 
@@ -167,9 +208,11 @@ nav{
 
 .ipad-section{
     
+    padding-bottom: 80px;
+
     img{
         height: 500px;
-        width: 79.5%;
+        width: 82%;
         scale: 125.3%;
         padding-top: 56px;
     }
@@ -215,7 +258,21 @@ nav{
                 padding-top: 5px;
                 text-decoration: none;
 
+                .arrow{
+                    border: solid #06c;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    margin-bottom: 1px;
+                }
+        
+                .right{
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+
             }
+
             a:hover{
                 cursor: pointer;
                 text-decoration: underline;
