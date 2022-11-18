@@ -18,7 +18,7 @@ html{
 /** header.jsx & mobileheader.jsx component styling */
 
 nav{
-    background: rgba(0,0,0,0.8);
+    background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -68,7 +68,7 @@ nav{
             }
         }
 
-        li:hover{
+        li:hover{ 
             color: #f5f5f7;
             transition: ease-in .1s;
         }
@@ -86,7 +86,7 @@ nav{
     
 
     .mobile-nav{
-        background: rgba(0,0,0,0.8);
+        background: rgb(0, 0, 0);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -139,15 +139,39 @@ nav{
 //////////////////////////////////////////////////////////////////////////////////
 
 
+/** holidaygift.jsx component styling */
+
+.holiday-gift-section{
+    background: rgba(255, 21, 21, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 45px;
+    width: 100vw;
+    z-index: 9999;
+    max-height: 100%;
+    padding-top: 45px;
+
+    p{
+        font-size: 13px;
+        color: #f5f5f7;
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
 /** ipad.js component styling*/
 
 .ipad-section{
     
     img{
         height: 500px;
-        width: -webkit-fill-available;
+        width: 79.5%;
         scale: 125.3%;
-        padding-top: 100px;
+        padding-top: 56px;
     }
 
     .ipad-text-container{
