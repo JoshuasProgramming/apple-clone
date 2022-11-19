@@ -112,11 +112,18 @@ class Footer extends Component {
                     <p>More ways to shop: <a>find an Apple Store</a> or <a>other retailer</a> near you. Or call 0800 048 0408.</p>
                 </div>
  
-                <div className="underline"></div>
+                <div className="underline second-underline"></div>
 
                 <section className="sub-section-footer3">
                     <p>Copyright &#169; 2022 Apple Inc. All rights reserved.</p>
-                    <p>Privacy Policy | Use of Cookies | Terms of Use | Sales and Refunds | Legal | Site Map</p>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Use of Cookies</li>
+                        <li>Terms of Use </li>
+                        <li>Sales and Refunds</li>
+                        <li>Legal</li>
+                        <li>Site Map</li>
+                    </ul>
                     <p>United Kingdom</p>
                 </section>
             </footer>
