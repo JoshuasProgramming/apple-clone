@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
+import apple from '../images/apple.svg';
+import bag from '../images/bag.svg';
 
 class MobileHeader extends Component {
     render(){
@@ -10,8 +12,8 @@ class MobileHeader extends Component {
                         <div className="ham-line"></div>
                         <div className="ham-line"></div>
                     </li>
-                    <li><img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt='apple-logo'></img> </li>
-                    <li><img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg" alt="apple-bag" /></li>
+                    <li><img src={apple} alt='apple-logo'></img> </li>
+                    <li><img src={bag} alt="apple-bag" /></li>
                 </ul>
             </div>
         )

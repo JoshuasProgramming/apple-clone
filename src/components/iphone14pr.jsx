@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
-import ipad from '../images/ipad.jpg';
+import iphone14pro from '../images/iphone14pro.jpg';
 
-class Ipad extends Component {
+class Iphone14Pro extends Component {
     render(){
         return(
-            <section className="ipad-section">
-                <img src={ipad} alt="ipad-image" />
-                <div className="ipad-text-container">
-                    <h1>iPad</h1>
-                    <p>Loveable. Drawable. Magical.</p>
+            <section className="iphone14pro-section">
+                <img src={iphone14pro} alt="iphone14pro-image"/>
+                <div className="iphone-text-container">
+                    <h1>iPhone 14 Pro</h1>
+                    <p>Pro. Beyond</p>
                     <div className="links">
                         <a href="#">Learn more <i className='arrow right'></i></a>
                         <a href="#">Buy <i className='arrow right'></i></a>
@@ -20,4 +20,4 @@ class Ipad extends Component {
     }
 }
 
-export default Ipad;
+export default Iphone14Pro;

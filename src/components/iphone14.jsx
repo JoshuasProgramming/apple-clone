@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
+import iphone14 from '../images/iphone14.jpg';
 
 class Iphone14 extends Component {
     render(){
         return(
             <section className="iphone14-section">
-                <img src="https://www.apple.com/uk/home/images/heroes/iphone-14/hero_iphone14__fjmsqstr1ceq_largetall_2x.jpg" alt="iphone14-image"/>
+                <img src={iphone14} alt="iphone14-image"/>
                 <div className="iphone-text-container">
                     <h1>iPhone 14</h1>
                     <p>Big and bigger</p>

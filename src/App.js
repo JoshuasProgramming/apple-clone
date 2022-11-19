@@ -5,6 +5,7 @@ import MobileHeader from './components/mobileheader';
 import HolidayGift from './components/holidaygift';
 import Discount from './components/discount';
 import Iphone14 from './components/iphone14';
+import Iphone14Pro from './components/iphone14pr';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Discount/>
       <Ipad/>
       <Iphone14/>
+      <Iphone14Pro/>
     </div>
   );
 }
