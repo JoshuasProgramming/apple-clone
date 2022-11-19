@@ -454,12 +454,12 @@ nav{
 
 footer{
     background: #f5f5f7;
-    height: 500px;
+    height: 700px;
 
     .underline{
         height: .1px;
         margin: 10px;
-        width: 58%;
+        width: 59%;
         margin: 20px auto auto auto;
         background: #c8c8c9;
     }
@@ -485,6 +485,66 @@ footer{
             a:hover{
                 cursor: pointer;
                 text-decoration: underline;
+            }
+        }
+    }
+
+    .sub-section-footer2{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 19px;
+
+        .footer-list-containers{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-right: 42px;
+
+            .healthcare{
+                margin-left: 30px;
+            }
+
+            .appleId{
+                margin-left:50px;
+            }
+
+            ul{
+                display: flex;
+                align-items: baseline;
+                justify-content:center;
+                flex-direction: column;
+                padding-bottom: 20px;
+
+                li{
+                    list-style: none;
+                    margin: 6px 0px;
+                    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                    font-size: 13px;
+                    color: #515154;
+                    cursor: pointer;
+                    transition: ease-in .25s;
+                    font-weight: 100;
+                    letter-spacing: -.05px;
+                }
+
+                li:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                li:nth-child(1){
+                    color: #0d0d0e;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                li:nth-child(1):hover{
+                    text-decoration: none;
+                    cursor:default;
+                }
             }
         }
     }
