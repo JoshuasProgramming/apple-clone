@@ -445,3 +445,47 @@ nav{
     }
 
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+/** footer component styling*/
+
+footer{
+    background: #f5f5f7;
+    height: 500px;
+
+    .underline{
+        height: .1px;
+        margin: 10px;
+        width: 58%;
+        margin: 20px auto auto auto;
+        background: #c8c8c9;
+    }
+
+    .sub-section-footer1{
+
+        margin: 0% 21%;
+        padding-top: 80px;
+
+        p{
+            font-size: .8em;
+            line-height: 1.33337;
+            font-weight: 400;
+            letter-spacing: -.01em;
+            font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+            color: #79797c;
+            text-align: left;
+
+            a{
+                color: #515154;
+            }
+
+            a:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

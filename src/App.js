@@ -6,6 +6,7 @@ import HolidayGift from './components/holidaygift';
 import Discount from './components/discount';
 import Iphone14 from './components/iphone14';
 import Iphone14Pro from './components/iphone14pr';
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Ipad/>
       <Iphone14/>
       <Iphone14Pro/>
+      <Footer/>
     </div>
   );
 }
