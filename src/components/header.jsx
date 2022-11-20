@@ -6,20 +6,19 @@ import bag from '../images/bag.svg';
 
 class Header extends Component {
     render(){
+        
+        const navList = ["Store", "Mac", "iPad", "iPhone", "Watch", "AirPods", "TV & Home",
+                        "Only on Apple", "Accessories", "Support"]
+
         return(
             <nav id='navigation'>  
                 <ul>
                     <li><img src={apple} alt="apple-logo"></img></li>
-                    <li>Store</li>
-                    <li>Mac</li>
-                    <li>iPad</li>
-                    <li>iPhone</li>
-                    <li>Watch</li>
-                    <li>AirPods</li>
-                    <li>TV & Home</li>
-                    <li>Only on Apple</li>
-                    <li>Accessories</li>
-                    <li>Support</li>
+
+                    {navList.map((value, key) => {
+                        return <li key={key}>{value}</li>
+                    })}
+
                     <li>< img src={search} alt="apple-search-icon" className="search-icon" ></img></li>
                     <li><img src={bag} alt="apple-bag" /></li>
                 </ul>
