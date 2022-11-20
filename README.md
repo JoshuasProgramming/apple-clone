@@ -1,3 +1,16 @@
+# Apple Website Clone
+
+I created a fully responsive version of the Apple website from viewing the official website.
+
+## Languages I used
+
+* I used Reactjs with jsx components to build the Apple Clone.
+
+* Used SCSS for styling
+
+## In Production 
+![Final Product](https://github.com/JoshuasProgramming/apple-clone/blob/main/src/images/readme_image.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
