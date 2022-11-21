@@ -368,7 +368,7 @@ nav{
 
 .iphone14pro-section{
     
-    padding-bottom: 80px;
+    padding-bottom: 160px;
 
     img{
         height: 500px;
@@ -444,6 +444,29 @@ nav{
         }
     }
 
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+/** productgrid.jsx component styling*/
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 1500px;
+    gap: 20px 20px;
+
+    .products{
+        background: black;
+    }
+
+    .product:nth-child(1){
+        background-image: url("../images/iphone14.jpg");
+    }
 }
 
 
