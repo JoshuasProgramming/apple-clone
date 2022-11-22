@@ -8,13 +8,15 @@ import Iphone14 from './components/iphone14';
 import Iphone14Pro from './components/iphone14pr';
 import ProductGrid from './components/productgrid';
 import Footer from './components/footer'
+import ProductBanner from './components/productbanner';
 
 function App() {
-  return (
+  return (  
     <div className="App">
       <Header/>
       
       <div className='navbar-and-banner-container'>
+        <ProductBanner/>
         <MobileHeader/>
         <HolidayGift/>
       </div>

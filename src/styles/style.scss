@@ -139,6 +139,31 @@ nav{
 //////////////////////////////////////////////////////////////////////////////////
 
 
+/** productbanner.jsx component styling */
+
+.product-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        li{
+            font-size: 12px;
+        }
+
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
 /** holidaygift.jsx & discount component styling */
 
 .holiday-gift-section{
@@ -451,23 +476,24 @@ nav{
 
 /** productgrid.jsx component styling*/
 
-.product-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 1500px;
-    gap: 20px 20px;
+// .product-grid{
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+//     height: 1500px;
+//     gap: 20px 20px;
 
-    .products{
-        background: black;
-    }
+//     .products{
+//         background: black;
+//     }
 
-    .product:nth-child(1){
-        background-image: url("../images/iphone14.jpg");
-    }
-}
+//     .products:nth-child(1){
+//         scale: 30%;
+//         width: 5px;
+//     }
+// }
 
 
 //////////////////////////////////////////////////////////////////////////////////

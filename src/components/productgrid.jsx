@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
-import iphone14 from '../images/iphone14.jpg';
+import iphone14pro from '../images/iphone14pro.jpg';
 
 class ProductGrid extends Component {
     render(){
         return(
             <section className="product-grid">
-                <div className="products">
-                </div>
+                <div className="products"></div>
                 <div className="products"></div>
                 <div className="products"></div>
                 <div className="products"></div>
