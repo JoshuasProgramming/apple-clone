@@ -9,6 +9,9 @@ import WatchUltra from '../images/appleWatchUltra.svg';
 import IMacPro from '../images/imacPro.svg';
 import iPhoneSE from '../images/iphoneSE.svg';
 import accessories from '../images/accessories.svg';
+import compare from '../images/compare.svg';
+import airtag from '../images/airtag.svg';
+import Atv4k from '../images/AppleTV4K.svg';
 
 class ProductBanner extends Component {
     render(){
@@ -70,6 +73,30 @@ class ProductBanner extends Component {
                 image: {
                     src: IMacPro,
                     alt: 'iMac 24 Img',
+                }
+            },
+
+            {
+                title: 'Apple TV 4K',
+                image: {
+                    src: Atv4k,
+                    alt: 'iMac 24 Img',
+                }
+            },
+
+            {
+                title: 'Compare',
+                image: {
+                    src: compare,
+                    alt: 'compare Img',
+                }
+            },
+
+            {
+                title: 'AirTag',
+                image: {
+                    src: airtag,
+                    alt: 'airtag Img',
                 }
             },
 
