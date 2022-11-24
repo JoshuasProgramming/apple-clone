@@ -153,11 +153,11 @@ nav{
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        padding: 10px 0px;
+        padding: 12px 0px;
 
         li{
             list-style: none;
-            margin: 0px 21.5px;
+            margin: 0px 13.5px;
 
             .product{
                 display: flex;
@@ -167,13 +167,13 @@ nav{
 
                 p{
                     font-size: 12px;
-                    line-height: 1.33337;
+                    line-height: 0.99;
                     font-weight: 400;
                     letter-spacing: -.01em;
                     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
                     display: block;
                     margin: 0;
-                    margin-bottom: 5px;
+                    margin-bottom: 0px;
                     color: #3e3e3e;
                     transition: ease-in .5;
                 }
@@ -182,6 +182,15 @@ nav{
                     color: #06c;
                     transition: ease-in .5;
                     cursor: pointer;
+                }
+
+                .new-product{
+                    color: rgb(246, 179, 55);
+                    margin-top: 0px;
+                }
+
+                .new-product:hover{
+                    color: rgb(246, 179, 55);
                 }
 
                 img{
@@ -195,6 +204,10 @@ nav{
                 }
 
             }
+        }
+
+        .not-new{
+            margin-bottom:13px;
         }
 
     }

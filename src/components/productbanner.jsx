@@ -17,106 +17,33 @@ class ProductBanner extends Component {
     render(){
 
         //products object will contain a title and image property for several Apple Products
-        const products = [
-            {
-                title: 'MacBook Air',
-                image: {
-                    src: Ma,
-                    alt: 'MacbookAir_Img',
-                }
-            },
-
-            {
-                title: 'MacBook Pro',
-                image: {
-                    src: Mp,
-                    alt: 'MacbookPro_Img',
-                }
-            },
-
-            {
-                title: 'iphone14 Pro',
-                image: {
-                    src: Ip14P,
-                    alt: 'Iphone14Pro_Img',
-                }
-            },
-
-            {
-                title: 'iPhone14',
-                image: {
-                    src: Ip14,
-                    alt: 'IPhone14_Img',
-                }
-            },
-
-
-            {
-                title: 'iPhone SE',
-                image: {
-                    src: iPhoneSE,
-                    alt: 'IPhoneSE_Img',
-                }
-            },
-
-
-            {
-                title: 'Apple Watch Ultra',
-                image: {
-                    src: WatchUltra,
-                    alt: 'Apple Watch Ultra Img',
-                }
-            },
-
-            {
-                title: 'iMac 24',
-                image: {
-                    src: IMacPro,
-                    alt: 'iMac 24 Img',
-                }
-            },
-
-            {
-                title: 'Apple TV 4K',
-                image: {
-                    src: Atv4k,
-                    alt: 'iMac 24 Img',
-                }
-            },
-
-            {
-                title: 'Compare',
-                image: {
-                    src: compare,
-                    alt: 'compare Img',
-                }
-            },
-
-            {
-                title: 'AirTag',
-                image: {
-                    src: airtag,
-                    alt: 'airtag Img',
-                }
-            },
-
-            {
-                title: 'Accessories',
-                image: {
-                    src: accessories,
-                    alt: 'accessories Img',
-                }
-            },
-        ];
+        const products = [{title: 'Macbook Air', image: {src: Ma, alt: 'MacbookAir_Img'}, isNew: true }, 
+                       {title: 'MacBook Pro', image: {src: Mp, alt: 'MacbookPro_Img'}, isNew: true},
+                       {title: 'iphone14 Pro', image: {src: Ip14P, alt: 'Iphone14Pro_Img'}, isNew: false},
+                       {title: 'iPhone14', image: {src: Ip14, alt: 'IPhone14_Img'} , isNew: false},
+                       {title: 'iPhone SE', image: {src: iPhoneSE, alt: 'IPhoneSE_Img'} , isNew: false},
+                       {title: 'Apple Watch Ultra', image: {src: WatchUltra, alt: 'AppleWatchUltra_Img'} , isNew: false}, 
+                       {title: 'iMac 24', image: {src: IMacPro, alt: 'iMac 24_Img'} , isNew: false}, 
+                       {title: 'Apple TV 4K', image: {src: Atv4k, alt: 'iMac 24_Img'} , isNew: false},
+                       {title: 'Compare', image: {src: compare, alt: 'compare_Img'} , isNew: false},
+                       {title: 'AirTag', image: {src: airtag, alt: 'airtag_Img'} , isNew: false},
+                       {title: 'Accessories', image: {src: accessories, alt: 'accessories_Img'} , isNew: false}
+                       ,]
 
         return(
             <section className='product-banner'>
                 <ul>
                     {/* loop through each product for length of 'products' (object) times */}
                     {products.map((value, key) => {
-                        return <li>
-                            {/* return a component with the title, image and image alt text (send down as a prop) in a list/li element */}
-                            <ProductBanner_Item key={key} title={value.title} image={value.image.src} alt={value.image.alt}/>
+
+                        return value.isNew === false ?
+                        <li className='not-new'>
+                            {/* return a component with the title, image, image alt text & 'isNew' boolean value (send down as a prop) in a list/li element */}
+                            <ProductBanner_Item key={key} title={value.title} image={value.image.src} alt={value.image.alt} isNew={value.isNew}/>
+                        </li>
+                        :
+                        <li>
+                            <ProductBanner_Item key={key} title={value.title} image={value.image.src} alt={value.image.alt} isNew={value.isNew}/>
                         </li>
                     })}
                 </ul>

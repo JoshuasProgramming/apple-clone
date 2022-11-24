@@ -11,6 +11,7 @@ const ProductBanner_Item = (props) => {
         <div className="product">
             <img src={props.image} alt={props.alt} />
             <p>{props.title}</p>
+            {props.isNew == true ? <p className='new-product'>New</p> : null}
         </div>
     )
 }
