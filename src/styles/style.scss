@@ -9,6 +9,29 @@ html{
     overflow-x: hidden;
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+/** navbar-and-banner-container from App.css*/
+
+.navbar-and-banner-container{
+    padding-top: 45px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-and-banner-container{
+        padding-top: 0px;
+
+    }
+
+    .discount{
+        height: 80px;
+    }
+}
+
+
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -132,6 +155,10 @@ nav{
         }
     }
 
+    //App.js div classNme container
+    .navbar-and-banner-container{
+        padding-top: 0px;
+    }
 }
 
 
@@ -212,6 +239,12 @@ nav{
     }
 }
 
+@media screen and (max-width: 971px) {
+    .product-banner{
+        display: none;
+    }
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -273,6 +306,12 @@ nav{
             transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
         }
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .discount{
+        height: 72px;
     }
 }
 
@@ -524,18 +563,6 @@ nav{
 }
 
 //////////////////////////////////////////////////////////////////////////////////
-
-// EVERYTHING ELSE FOR RESPONSIVE
-@media screen and (max-width: 768px) {
-    .navbar-and-banner-container{
-        padding-top: 0px;
-
-    }
-
-    .discount{
-        height: 70px;
-    }
-}
 
 
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
-import iphone14pro from '../images/iphone14pro.jpg';
 
 class ProductGrid extends Component {
     render(){
