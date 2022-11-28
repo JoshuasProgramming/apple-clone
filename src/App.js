@@ -16,16 +16,18 @@ function App() {
       <Header/>
       
       <div className='navbar-and-banner-container'>
-        <ProductBanner/>
         <MobileHeader/>
+        <ProductBanner/>
         <HolidayGift/>
       </div>
+
       <Discount/>
       <Ipad/>
       <Iphone14/>
       <Iphone14Pro/>
       <ProductGrid/>
       <Footer/>
+
     </div>
   );
 }

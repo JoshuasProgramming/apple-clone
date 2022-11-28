@@ -13,6 +13,7 @@ import compare from '../images/compare.svg';
 import airtag from '../images/airtag.svg';
 import Atv4k from '../images/AppleTV4K.svg';
 
+
 class ProductBanner extends Component {
     render(){
 
@@ -29,24 +30,26 @@ class ProductBanner extends Component {
                        {title: 'AirTag', image: {src: airtag, alt: 'airtag_Img'} , isNew: false},
                        {title: 'Accessories', image: {src: accessories, alt: 'accessories_Img'} , isNew: false}
                        ,]
-
         return(
             <section className='product-banner'>
+
                 <ul>
                     {/* loop through each product for length of 'products' (object) times */}
                     {products.map((value, key) => {
-
+                        
                         return value.isNew === false ?
                         <li className='not-new'>
+                            
                             {/* return a component with the title, image, image alt text & 'isNew' boolean value (send down as a prop) in a list/li element */}
                             <ProductBanner_Item key={key} title={value.title} image={value.image.src} alt={value.image.alt} isNew={value.isNew}/>
                         </li>
-                        :
+                        : 
                         <li>
                             <ProductBanner_Item key={key} title={value.title} image={value.image.src} alt={value.image.alt} isNew={value.isNew}/>
                         </li>
                     })}
                 </ul>
+
             </section>
         )
     }
