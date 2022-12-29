@@ -3,6 +3,10 @@ import '../styles/style.css';
 
 class Footer extends Component {
     render(){
+
+        const sub_section_footer1 = [{text: 'test'}]
+
+
         return(
             <footer>
                 <section className="sub-section-footer1">

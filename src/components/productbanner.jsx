@@ -17,7 +17,7 @@ import Atv4k from '../images/AppleTV4K.svg';
 class ProductBanner extends Component {
     render(){
 
-        //products object will contain a title and image property for several Apple Products
+        //products object will contain a title and image property for several Apple Product categories
         const products = [{title: 'Macbook Air', image: {src: Ma, alt: 'MacbookAir_Img'}, isNew: true }, 
                        {title: 'MacBook Pro', image: {src: Mp, alt: 'MacbookPro_Img'}, isNew: true},
                        {title: 'iphone14 Pro', image: {src: Ip14P, alt: 'Iphone14Pro_Img'}, isNew: false},
